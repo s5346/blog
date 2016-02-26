@@ -16,7 +16,7 @@
     <div class="wrapper">
       <header>
         <h1>Blog</h1>
-        <p>簡介</p>
+        <p>1.Django的安裝(mac)</p>
 
         <p class="view"><a href="https://github.com/s5346/blog">View the Project on GitHub <small>s5346/blog</small></a></p>
 
@@ -28,56 +28,67 @@
         </ul>
       </header>
       <section>
-        <p>我是iOS工程師
-目前SOHO接接外包
-打算練練副職業Python
-請多指教</p>
+        <h5>
+<a id="1安裝python" class="anchor" href="#1%E5%AE%89%E8%A3%9Dpython" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.安裝python</h5>
 
-<p>以前開發自己的APP'別說'時
-用PHP寫了簡單的後台
-開API給APP使用
-後來又做了另一款'<a href="http://s5346-blog.logdown.com/posts/304943-micro-app-micro-mind">微心</a>'
-是'別說'的進階版
-所以就把'別說'下架了
-但'<a href="http://s5346-blog.logdown.com/posts/304943-micro-app-micro-mind">微心</a>'使用的後台是leancloud
-就不是自己寫的了</p>
+<p>內建雖然有python
+但版本只有2.x
+所以先<a href="https://www.python.org/downloads/mac-osx/">下載新版3.5.1</a>
+然後安裝</p>
 
-<p>直到最近有客戶把整個案子包給我
-也就是包含企劃,android,iOS,後台,設計
-設計跟android我請朋友幫忙
-因為後台架構不大
-而iOS我預估不用花多少時間
-就趁機來自己練習寫</p>
+<h5>
+<a id="2安裝pip" class="anchor" href="#2%E5%AE%89%E8%A3%9Dpip" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2.安裝pip</h5>
 
-<p>但因為是客戶要用的
-所以必須要有後台管理系統給客戶上資料
-以前寫的PHP只有單純的API跟MySql溝通
-沒熟練到可以寫管理介面
-恰巧對python蠻有興趣的
-所以就來學習以python做的Django</p>
+<p>pip為python的管理套件
+python3應有內建
+沒有的話就安裝</p>
 
-<p>為什麼選擇這個呢?
-選擇它的原因是因為他有個好處
-Django有一個內建的套件admin
-只要你在Django有設定模組
-也就是設定資料庫有哪些資料
-它自動就會產生後台管理系統
-可以在這新增、刪除、修改資料
-也就很符合我的需求</p>
+<pre><code>$sudo easy_install pip
+</code></pre>
 
-<p>我想有些人應該跟我一樣
-想學網站
-但看完HTML,CSS後又不知道該做什麼了
-心血來潮又再翻
-又回到原點
-因為工程師又會設計的很少
-我建議可以學Django
-它是MVC架構
-前後台分開
-學一下怎麼建資料
-比如網站常有的選單
-然後在找個別人做的漂漂亮亮的免費靜態網頁套上去
-看起來就像一個專業的動態網站了XD</p>
+<p>觀看所有安裝的套件</p>
+
+<pre><code>$pip list
+</code></pre>
+
+<p>移除所安裝的套件</p>
+
+<pre><code>$pip uninstall 套件名稱
+</code></pre>
+
+<h5>
+<a id="3安裝virtualenv" class="anchor" href="#3%E5%AE%89%E8%A3%9Dvirtualenv" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3.安裝virtualenv</h5>
+
+<p>如果開發多個專案，又都不同的python、Django版本，虛擬環境就可以創建一個乾淨的環境做開發</p>
+
+<pre><code>$pip3 install virtualenv
+</code></pre>
+
+<p>建立虛擬環境</p>
+
+<pre><code>$python3 -m venv 自建名稱
+</code></pre>
+
+<p>啟動虛擬環境</p>
+
+<pre><code>$source 自建名稱/bin/activate
+</code></pre>
+
+<p>啟動成功的話
+開頭會有個(自建名稱)xxxx$</p>
+
+<h5>
+<a id="4安裝django" class="anchor" href="#4%E5%AE%89%E8%A3%9Ddjango" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4.安裝Django</h5>
+
+<p>開發網站的套件</p>
+
+<pre><code>$pip install django
+</code></pre>
+
+<p>如果需要指定版本</p>
+
+<pre><code>$pip install django==1.9.1
+</code></pre>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/s5346">s5346</a></p>
